@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aimbot CS:GO</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header><h1>Aimbot para CS:GO (2025)</h1></header>
+  <main>
+    <p>Este aimbot foi atualizado para burlar as últimas detecções da Valve Anti-Cheat (VAC).</p>
+    <p><a href="#">🔽 Baixar agora</a> (Senha: hacker2025)</p>
+  </main>
+</body>
+</html>

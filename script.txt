@@ -1,0 +1,31 @@
+const posts = [
+  {
+    title: "Aimbot para CS:GO (2025)",
+    content: "Nova versão do aimbot detecta menos. Clique e confira!",
+    link: "posts/post1.html"
+  },
+  {
+    title: "Mod Menu para GTA San Andreas Mobile",
+    content: "Inclui dinheiro infinito, armas, teleportes e mais.",
+    link: "posts/post2.html"
+  }
+];
+
+function renderPosts(filter = "") {
+  const container = document.getElementById("posts");
+  container.innerHTML = "";
+  posts
+    .filter(post => post.title.toLowerCase().includes(filter.toLowerCase()))
+    .forEach(post => {
+      const el = document.createElement("div");
+      el.className = "post";
+      el.innerHTML = `<h2><a href="${post.link}">${post.title}</a></h2><p>${post.content}</p>`;
+      container.appendChild(el);
+    });
+}
+
+document.getElementById("search").addEventListener("input", e => {
+  renderPosts(e.target.value);
+});
+
+renderPosts();
